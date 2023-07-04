@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+            crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+</head>
+<body>
+    <header th:fragment="top_header">
+        <nav class="navbar navbar-expand-lg bg-light">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="/product/list"> <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fe/Shopee.svg/1200px-Shopee.svg.png" style="height: 50px" alt=""> </a>
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="/cart">Giỏ hàng</a>
+                        </li>
+
+
+                    </ul>
+                    <form class="d-flex" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-success" type="submit">Search</button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+        <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel" style="margin-bottom: 20px;margin-top: 20px ">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="https://salt.tikicdn.com/cache/w700/ts/tmp/4f/8a/e9/823fd787446623b408b403794b5edd33.jpg.webp" class="d-block w-100" style="height: 500px" alt="">
+                </div>
+                <div class="carousel-item">
+                    <img src="https://salt.tikicdn.com/cache/w700/ts/tmp/3d/9c/1e/9953d43353addcb25f8d9cab9040b05b.jpg.webp" class=" d-block w-100 " style="height: 500px" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="https://salt.tikicdn.com/cache/w700/ts/tmp/1a/ab/a5/deb8da2620b5b6c0a3c77f865a202824.jpg.webp" class="d-block w-100 " style="height: 500px" alt="...">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </header>
+</body>
+</html>
